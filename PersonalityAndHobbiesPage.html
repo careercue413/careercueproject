@@ -223,6 +223,10 @@
 </form>
 
 <script>
+if (window.performance && window.performance.navigation.type === 2) {
+    window.location.reload();
+}
+
 window.onload = function() {
     if (localStorage.getItem("quizCompleted") === "true") {
         localStorage.clear();
@@ -249,10 +253,13 @@ window.onload = function() {
         });
     });
 
-    document.querySelector("#personalityForm").addEventListener("submit", function(e) {
-        e.preventDefault(); 
-        window.location.href = "RealLifeSituationsQuestions.html";
-    });
+    const personalityForm = document.querySelector("#personalityForm");
+    if (personalityForm) {
+        personalityForm.addEventListener("submit", function(e) {
+            e.preventDefault(); 
+            window.location.href = "RealLifeSituationsQuestions.html";
+        });
+    }
 };
 
 </script>
