@@ -222,14 +222,13 @@ window.onload = function() {
     });
 };
 
-function resetResults() {
+
+function restartEverything() {
     localStorage.clear();
-    // replace() is better than href because it "deletes" this result page from history
-    window.location.replace("index.html");
+    window.location.href = "index.html";
 }
 </script>
-
-<button onclick="resetResults()" class="restart-btn">Back to Main Menu</button>
+<button onclick="restartEverything()">Go Back to Main Menu</button>
 
 </center>
 </div>
