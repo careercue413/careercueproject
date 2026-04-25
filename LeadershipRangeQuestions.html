@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Additional questions</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style3.css">
+</head>
+<style>
+		.container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+            /* Set the height of the container to the viewport height */
+        }
+		
+		center {
+			color: white;
+			font-size: 20px;
+			}
+			
+		ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		}
+		
+		a:link {
+		 color: white;
+		 }
+
+        /* visited link*/
+		
+		 a:visited {
+		 color: grey;
+		 }
+		 
+		/* mouse over link*/
+		
+		 a:hover {
+		 color: yellow;
+		 }
+		 
+		 a:link {
+			text-decoration: none;
+		}
+
+		a:visited {
+		  text-decoration: none;
+		}
+
+		a:hover {
+		  text-decoration: underline;
+		}
+
+		a:active {
+		  text-decoration: underline;
+		}
+        button {
+		background-color: #007BFF;
+		color: white;
+		padding: 12px 28px;
+		border: none;
+		border-radius: 6px;
+		font-size: 16px;
+		font-weight: bold;
+		cursor: pointer;
+		transition: background-color 0.3s ease;
+        }
+        button:hover {
+		background-color: #0056b3;
+		}
+</style>
+
+<body style="background-color: #0D3B66;">
+<div class="container">
+<center>
+<h1>The Leadership Range</h1>
+<p>Based on the range, you can answer the following questions</p>
+<p>These questions will show you your top 6 jobs most suited to you after completion.</p>
+
+<form id="leadershipForm">
+<ul class ="survey">
+
+<li> 
+    <h3><strong>Question 1</strong></h3>
+    <p><strong>When leading a project or a team, what would your natural approach be?</strong></p>
+    <ul class="choices"> 
+        <li><label><input type="radio" name="question0" value="A" data-points="3" required /> <span>Motivating and guiding your team</span></label></li>
+        <li><label><input type="radio" name="question0" value="B" data-points="1" required /> <span>Inspiring others with your big ideas</span></label></li>
+        <li><label><input type="radio" name="question0" value="C" data-points="4" required /> <span>Focusing more on data and evidence to assure your team</span></label></li>
+        <li><label><input type="radio" name="question0" value="D" data-points="2" required /> <span>Planning and organizing your work with upmost care</span></label></li>
+    </ul>
+</li>
+
+<li> 
+    <h3><strong>Question 2</strong></h3>
+    <p><strong>How do you solve or handle a ongoing conflict in a group?</strong></p>
+    <ul class="choices"> 
+        <li><label><input type="radio" name="question1" value="A" data-points="4" required /> <span>By analyzing the root cause before making any decisions</span></label></li>
+        <li><label><input type="radio" name="question1" value="B" data-points="2" required /> <span>Take immediate action to resolve the situation quickly</span></label></li>
+        <li><label><input type="radio" name="question1" value="C" data-points="1" required /> <span>Thread carefully and try to seek compromise</span></label></li>
+        <li><label><input type="radio" name="question1" value="D" data-points="3" required /> <span>Encourage members to be more open amongst each other</span></label></li>
+    </ul>
+</li>
+
+<li> 
+    <h3><strong>Question 3</strong></h3>
+    <p><strong>What motivates you the most as the leader?</strong></p>
+    <ul class="choices"> 
+        <li><label><input type="radio" name="question2" value="A" data-points="2" required /> <span>Acheiving memorable results</span></label></li>
+        <li><label><input type="radio" name="question2" value="B" data-points="4" required /> <span>Making sure everything is going well and at a good pace </span></label></li>
+        <li><label><input type="radio" name="question2" value="C" data-points="1" required /> <span>Pushing the team to be more innovative</span></label></li>
+        <li><label><input type="radio" name="question2" value="D" data-points="3" required /> <span>Helping people to grow and succeed</span></label></li>
+    </ul>
+</li>
+
+<li> 
+    <h3><strong>Question 4</strong></h3>
+    <p><strong>What skill do you rely on the most?</strong></p>
+    <ul class="choices"> 
+        <li><label><input type="radio" name="question3" value="A" data-points="4" required /> <span>Critical Analysis</span></label></li>
+        <li><label><input type="radio" name="question3" value="B" data-points="1" required /> <span>Creativity and broad vision</span></label></li>
+        <li><label><input type="radio" name="question3" value="C" data-points="3" required /> <span>Communication amongst anyone</span></label></li>
+        <li><label><input type="radio" name="question3" value="D" data-points="2" required /> <span>Strategic approach to everything</span></label></li>
+    </ul>
+</li>
+
+<li> 
+    <h3><strong>Question 5</strong></h3>
+    <p><strong>How would you measure success in a leadership?</strong></p>
+    <ul class="choices"> 
+        <li><label><input type="radio" name="question4" value="A" data-points="3" required /> <span>Having a team that is satisfied and shown a inclining growth</span></label></li>
+        <li><label><input type="radio" name="question4" value="B" data-points="1" required /> <span>Being able to have your team be innovative with their work</span></label></li>
+        <li><label><input type="radio" name="question4" value="C" data-points="4" required /> <span>Having a proper method leading to long-term sustainability</span></label></li>
+        <li><label><input type="radio" name="question4" value="D" data-points="2" required /> <span>Objectives and Projects completed on time</span></label></li>
+    </ul>
+</li>
+
+<li> 
+    <h3><strong>Question 6</strong></h3>
+    <p><strong>What role do you take in decision-making?</strong></p>
+    <ul class="choices"> 
+        <li><label><input type="radio" name="question5" value="A" data-points="3" required /> <span>Seek input from the team and improve your ways </span></label></li>
+        <li><label><input type="radio" name="question5" value="B" data-points="1" required /> <span>Proposing new directions with no hesitation</span></label></li>
+        <li><label><input type="radio" name="question5" value="C" data-points="4" required /> <span>Decisions based more on the data accquired </span></label> </li>
+        <li><label><input type="radio" name="question5" value="D" data-points="2" required /> <span>The knowledge received from discovering new things. </span></label></li>
+    </ul>
+</li>
+
+<li> 
+    <h3><strong>Question 7</strong></h3>
+    <p><strong>How do you inspire your colleagues or team?</strong></p>
+    <ul class="choices"> 
+        <li><label><input type="radio" name="question6" value="A" data-points="2" required /> <span>Set clear goals and expectations</span></label></li>
+        <li><label><input type="radio" name="question6" value="B" data-points="4" required /> <span>Demonstrate your great understanding on this job</span></label></li>
+        <li><label><input type="radio" name="question6" value="C" data-points="1" required /> <span>Share your intriguing thoughts with your team</span></label></li>
+        <li><label><input type="radio" name="question6" value="D" data-points="3" required /> <span>Encourage and support your team personally</span></label></li>
+    </ul>
+</li>
+
+<li>  
+	<h3><strong>Question 8</strong></h3>
+	<p><strong>What type of leadership role appeals to you the most?</strong></p>
+	<ul class="choices">  
+		<li><label><input type="radio" name="question7" value="A" data-points="4" required /> <span>Analytical Leader</span></label></li>
+		<li><label><input type="radio" name="question7" value="B" data-points="2" required /> <span>Strategic leader</span></label></li>
+		<li><label><input type="radio" name="question7" value="C" data-points="3" required /> <span>People's leader</span></label></li>
+		<li><label><input type="radio" name="question7" value="D" data-points="1" required /> <span>Visionary leader</span></label></li>
+	</ul>
+</li> </ul> <button type="submit"><b><i>Check your Top 6 ranking jobs best suited for you!!!</i></b></button>
+</form> 
+</center>
+</div> 
+
+<script>
+
+if (performance.navigation.type === 2) {
+    location.reload(); 
+}
+
+window.onload = function() {
+    if (!localStorage.getItem("quizStarted")) {
+        window.location.replace("index.html");
+        return;
+    }
+
+    if (localStorage.getItem("quizComplete") === "true") {
+        window.location.replace("LastPageResult.html");
+        return;
+    }
+
+    if (!localStorage.getItem("question0_points")) {
+        document.querySelectorAll("input[type=radio]").forEach(input => {
+            input.checked = false;
+        });
+    } else {
+        document.querySelectorAll("input[type=radio]").forEach(input => {
+            const saved = localStorage.getItem(input.name);
+            if (saved && input.value === saved) {
+                input.checked = true;
+            }
+        });
+    }
+};
+
+document.querySelectorAll('input[type="radio"]').forEach(input => {
+    input.addEventListener("change", function() {
+        localStorage.setItem(this.name, this.value);
+        localStorage.setItem(this.name + "_points", this.getAttribute("data-points"));
+    });
+});
+
+document.querySelector("#leadershipForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    let jobScores = {
+        "Executive Manager": 0,
+        "Project Manager": 0,
+        "Human Resources Director": 0,
+        "Engineer": 0,
+        "Consultant / Policy Analyst": 0,
+        "Entrepreneur": 0,
+        "Specialized Professional": 0,
+        "Academic Leader": 0
+    };
+
+    document.querySelectorAll("input[type=radio]:checked").forEach(input => {
+        let points = parseInt(input.dataset.points);
+        let question = input.name;
+
+        switch(question) {
+            case "question0": 
+                if(input.value==="A") jobScores["Human Resources Director"]+=points;
+                if(input.value==="B") jobScores["Executive Manager"]+=points;
+                if(input.value==="C") jobScores["Consultant / Policy Analyst"]+=points;
+                if(input.value==="D") jobScores["Project Manager"]+=points;
+                break;
+            case "question1": 
+                if(input.value==="A") jobScores["Consultant / Policy Analyst"]+=points;
+                if(input.value==="B") jobScores["Project Manager"]+=points;
+                if(input.value==="C") jobScores["Executive Manager"]+=points;
+                if(input.value==="D") jobScores["Human Resources Director"]+=points;
+                break;
+            case "question2": 
+                if(input.value==="A") jobScores["Engineer"]+=points;
+                if(input.value==="B") jobScores["Academic Leader"]+=points;
+                if(input.value==="C") jobScores["Entrepreneur"]+=points;
+                if(input.value==="D") jobScores["Human Resources Director"]+=points;
+                break;
+            case "question3": 
+                if(input.value==="A") jobScores["Consultant / Policy Analyst"]+=points;
+                if(input.value==="B") jobScores["Executive Manager"]+=points;
+                if(input.value==="C") jobScores["Human Resources Director"]+=points;
+                if(input.value==="D") jobScores["Project Manager"]+=points;
+                break;
+            case "question4": 
+                if(input.value==="A") jobScores["Human Resources Director"]+=points;
+                if(input.value==="B") jobScores["Entrepreneur"]+=points;
+                if(input.value==="C") jobScores["Academic Leader"]+=points;
+                if(input.value==="D") jobScores["Engineer"]+=points;
+                break;
+            case "question5": 
+                if(input.value==="A") jobScores["Human Resources Director"]+=points;
+                if(input.value==="B") jobScores["Executive Manager"]+=points;
+                if(input.value==="C") jobScores["Consultant / Policy Analyst"]+=points;
+                if(input.value==="D") jobScores["Project Manager"]+=points;
+                break;
+            case "question6": 
+                if(input.value==="A") jobScores["Project Manager"]+=points;
+                if(input.value==="B") jobScores["Specialized Professional"]+=points;
+                if(input.value==="C") jobScores["Executive Manager"]+=points;
+                if(input.value==="D") jobScores["Human Resources Director"]+=points;
+                break;
+            case "question7": 
+                if(input.value==="A") jobScores["Consultant / Policy Analyst"]+=points;
+                if(input.value==="B") jobScores["Project Manager"]+=points;
+                if(input.value==="C") jobScores["Human Resources Director"]+=points;
+                if(input.value==="D") jobScores["Executive Manager"]+=points;
+                break;
+        }
+    });
+
+    let sortedJobs = Object.entries(jobScores).sort((a,b)=>b[1]-a[1]);
+    let topSix = sortedJobs.slice(0,6);
+
+    localStorage.setItem("leadershipResults", JSON.stringify(topSix));
+    localStorage.setItem("quizComplete", "true");
+
+    location.replace("LastPageResult.html");
+});
+</script>
+
+</body>
+</html>

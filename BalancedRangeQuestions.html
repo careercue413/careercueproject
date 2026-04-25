@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Additional questions</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style3.css">
+</head>
+<style>
+		.container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+        }
+		
+		center {
+			color: white;
+			font-size: 20px;
+			}
+			
+		ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		}
+		
+		a:link {
+		 color: white;
+		 }
+
+        /* visited link*/
+		
+		 a:visited {
+		 color: grey;
+		 }
+		 
+		/* mouse over link*/
+		
+		 a:hover {
+		 color: yellow;
+		 }
+		 
+		 a:link {
+			text-decoration: none;
+		}
+
+		a:visited {
+		  text-decoration: none;
+		}
+
+		a:hover {
+		  text-decoration: underline;
+		}
+
+		a:active {
+		  text-decoration: underline;
+		}
+        button {
+		background-color: #007BFF;
+		color: white;
+		padding: 12px 28px;
+		border: none;
+		border-radius: 6px;
+		font-size: 16px;
+		font-weight: bold;
+		cursor: pointer;
+		transition: background-color 0.3s ease;
+        }
+        button:hover {
+		background-color: #0056b3;
+		}
+</style>
+<body style="background-color: #0D3B66;">
+<div class="container">
+<center>
+<h1>The Balanced Range</h1>
+<p>Based on the range, you can answer the following questions</p>
+<p>These questions will show you your top 6 jobs most suited to you after completion.</p>
+
+<form id="balancedForm">
+<ul class ="survey">
+
+<li> 
+    <h3>Question 1</h3>
+    <p>Which environment are you most comfortable in?</p>
+    <ul class="choices"> 
+        <li><label><input type="radio" name="question0" value="A" data-points="2" required /> <span>Lab, office, or technical workspaces</span></label></li>
+        <li><label><input type="radio" name="question0" value="B" data-points="4" required /> <span>Library, research center, or quiet study areas</span></label></li>
+        <li><label><input type="radio" name="question0" value="C" data-points="1" required /> <span>Creative studio or design space</span></label></li>
+        <li><label><input type="radio" name="question0" value="D" data-points="3" required /> <span>Classrooms, meeting rooms, or the common areas</span></label></li>
+    </ul>
+</li>
+
+<li> 
+    <h3>Question 2</h3>
+    <p>How do you prefer solving problems?</p>
+    <ul class="choices"> 
+        <li><label><input type="radio" name="question1" value="A" data-points="3" required /> <span>By communicating with other people and sharing your own ideas</span></label></li>
+        <li><label><input type="radio" name="question1" value="B" data-points="1" required /> <span>Experiment with more broader options</span></label></li>
+        <li><label><input type="radio" name="question1" value="C" data-points="4" required /> <span>Study past data for knowledge</span></label></li>
+        <li><label><input type="radio" name="question1" value="D" data-points="2" required /> <span>Pose a whole another solution to that specific problem</span></label></li>
+    </ul>
+</li>
+
+<li> 
+    <h3>Question 3</h3>
+    <p>What activity best make good use of your time?</p>
+    <ul class="choices"> 
+        <li><label><input type="radio" name="question2" value="A" data-points="4" required /> <span>Reading, analyzing, or picking up some new skills</span></label></li>
+        <li><label><input type="radio" name="question2" value="B" data-points="2" required /> <span>Doing sports or exploring outdoor's nature </span></label></li>
+        <li><label><input type="radio" name="question2" value="C" data-points="1" required /> <span>Creating art or painting anything you see</span></label></li>
+        <li><label><input type="radio" name="question2" value="D" data-points="3" required /> <span>Helping people with their problems</span></label></li>
+    </ul>
+</li>
+
+<li> 
+    <h3>Question 4</h3>
+    <p>In a team project, which role fits you the best?</p>
+    <ul class="choices"> 
+        <li><label><input type="radio" name="question3" value="A" data-points="2" required /> <span>Organizer</span></label></li>
+        <li><label><input type="radio" name="question3" value="B" data-points="3" required /> <span>Presenter</span></label></li>
+        <li><label><input type="radio" name="question3" value="C" data-points="4" required /> <span>Researcher</span></label></li>
+        <li><label><input type="radio" name="question3" value="D" data-points="1" required /> <span>Idea generator</span></label></li>
+    </ul>
+</li>
+
+<li> 
+    <h3>Question 5</h3>
+    <p>When making career choices, what would you most rely on?</p>
+    <ul class="choices"> 
+        <li><label><input type="radio" name="question4" value="A" data-points="4" required /> <span>Past proven experiences</span></label></li>
+        <li><label><input type="radio" name="question4" value="B" data-points="1" required /> <span>Your intuition and creativity</span></label></li>
+        <li><label><input type="radio" name="question4" value="C" data-points="2" required /> <span>Structured Data analysis</span></label></li>
+        <li><label><input type="radio" name="question4" value="D" data-points="3" required /> <span>Asking other people for advice</span></label></li>
+    </ul>
+</li>
+
+<li> 
+    <h3>Question 6</h3>
+    <p>What motivates you most in work?</p>
+    <ul class="choices"> 
+        <li><label><input type="radio" name="question5" value="A" data-points="2" required /> <span>The satisfaction that comes with solving puzzling problems</span></label></li>
+        <li><label><input type="radio" name="question5" value="B" data-points="3" required /> <span>The joy of helping and guiding others</span></label></li>
+        <li><label><input type="radio" name="question5" value="C" data-points="1" required /> <span>The freedom to create and innovate</span></label> </li>
+        <li><label><input type="radio" name="question5" value="D" data-points="4" required /> <span>The knowledge received from discovering new things. </span></label></li>
+    </ul>
+</li>
+
+<li> 
+    <h3>Question 7</h3>
+    <p>How do you define success?</p>
+    <ul class="choices"> 
+        <li><label><input type="radio" name="question6" value="A" data-points="3" required /> <span>Building strong connections that will last a lifetime</span></label></li>
+        <li><label><input type="radio" name="question6" value="B" data-points="1" required /> <span>Innovating something unique and special only to you</span></label></li>
+        <li><label><input type="radio" name="question6" value="C" data-points="4" required /> <span>Using your knowledge to help advance a certain research</span></label></li>
+        <li><label><input type="radio" name="question6" value="D" data-points="2" required /> <span>Doing very well in every task with proper precision</span></label></li>
+    </ul>
+</li>
+
+<li>  
+	<h3>Question 8</h3>
+    <p>What type of career appeals to you the most?</p>
+    <ul class="choices"> 
+        <li><label><input type="radio" name="question7" value="A" data-points="2" required /> <span>Analytical careers</span></label></li>
+        <li><label><input type="radio" name="question7" value="B" data-points="4" required /> <span>Research Careers</span></label></li>
+        <li><label><input type="radio" name="question7" value="C" data-points="1" required /> <span>Creative careers</span></label></li>
+        <li><label><input type="radio" name="question7" value="D" data-points="3" required /> <span>Social careers</span></label></li>
+    </ul>
+        </li> </ul> <button type="submit"><b><i>Check your Top 6 ranking jobs best suited for you!!!</i></b></button>
+</form> </center>
+</div> ```
+<script>
+if (performance.navigation.type === 2) {
+    location.reload(); 
+}
+
+window.onload = function() {
+    if (!localStorage.getItem("quizStarted")) {
+        window.location.replace("index.html");
+        return;
+    }
+
+    if (localStorage.getItem("quizComplete") === "true") {
+        window.location.replace("LastPageResult.html");
+        return;
+    }
+
+    if (!localStorage.getItem("question0_points")) {
+        document.querySelectorAll("input[type=radio]").forEach(input => {
+            input.checked = false;
+        });
+    } else {
+        document.querySelectorAll("input[type=radio]").forEach(input => {
+            const saved = localStorage.getItem(input.name);
+            if (saved && input.value === saved) {
+                input.checked = true;
+            }
+        });
+    }
+};
+
+document.querySelectorAll('input[type="radio"]').forEach(input => {
+    input.addEventListener("change", function() {
+        localStorage.setItem(this.name, this.value);
+    });
+});
+
+document.querySelector("#balancedForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    let jobScores = {
+        "Graphic Designer": 0,
+        "Engineer": 0,
+        "Teacher": 0,
+        "Researcher": 0,
+        "Innovator": 0,
+        "Data Analyst": 0,
+        "HR Specialist": 0,
+        "Academic": 0
+    };
+
+    document.querySelectorAll("input[type=radio]:checked").forEach(input => {
+        let points = parseInt(input.dataset.points);
+        let question = input.name;
+
+        switch(question) {
+            case "question0": 
+                if(input.value==="A") jobScores["Graphic Designer"]+=points;
+                if(input.value==="B") jobScores["Engineer"]+=points;
+                if(input.value==="C") jobScores["Teacher"]+=points;
+                if(input.value==="D") jobScores["Researcher"]+=points;
+                break;
+            case "question1":
+                if(input.value==="A") jobScores["Innovator"]+=points;
+                if(input.value==="B") jobScores["Data Analyst"]+=points;
+                if(input.value==="C") jobScores["HR Specialist"]+=points;
+                if(input.value==="D") jobScores["Academic"]+=points;
+                break;
+            case "question2": 
+                if(input.value==="A") jobScores["Graphic Designer"]+=points;
+                if(input.value==="B") jobScores["Engineer"]+=points;
+                if(input.value==="C") jobScores["Teacher"]+=points;
+                if(input.value==="D") jobScores["Researcher"]+=points;
+                break;
+            case "question3": 
+                if(input.value==="A") jobScores["Innovator"]+=points;
+                if(input.value==="B") jobScores["Data Analyst"]+=points;
+                if(input.value==="C") jobScores["HR Specialist"]+=points;
+                if(input.value==="D") jobScores["Academic"]+=points;
+                break;
+            case "question4": 
+                if(input.value==="A") jobScores["Graphic Designer"]+=points;
+                if(input.value==="B") jobScores["Engineer"]+=points;
+                if(input.value==="C") jobScores["Teacher"]+=points;
+                if(input.value==="D") jobScores["Researcher"]+=points;
+                break;
+            case "question5": 
+                if(input.value==="A") jobScores["Innovator"]+=points;
+                if(input.value==="B") jobScores["Data Analyst"]+=points;
+                if(input.value==="C") jobScores["HR Specialist"]+=points;
+                if(input.value==="D") jobScores["Academic"]+=points;
+                break;
+            case "question6": 
+                if(input.value==="A") jobScores["Graphic Designer"]+=points;
+                if(input.value==="B") jobScores["Engineer"]+=points;
+                if(input.value==="C") jobScores["Teacher"]+=points;
+                if(input.value==="D") jobScores["Researcher"]+=points;
+                break;
+            case "question7":
+                if(input.value==="A") jobScores["Innovator"]+=points;
+                if(input.value==="B") jobScores["Data Analyst"]+=points;
+                if(input.value==="C") jobScores["HR Specialist"]+=points;
+                if(input.value==="D") jobScores["Academic"]+=points;
+                break;
+        }
+    });
+
+    let sortedJobs = Object.entries(jobScores).sort((a,b)=>b[1]-a[1]);
+    let topSix = sortedJobs.slice(0,6);
+
+    localStorage.setItem("balancedResults", JSON.stringify(topSix));
+    localStorage.setItem("quizComplete", "true");
+
+    location.replace("LastPageResult.html");
+});
+</script>
+
+</body>
+</html>

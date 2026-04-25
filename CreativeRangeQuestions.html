@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Additional questions</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style3.css">
+</head>
+<style>
+		.container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+		
+		center { color: white; font-size: 20px; }
+		
+        ul { list-style-type: none; margin: 0; padding: 0; }
+		
+        button {
+            background-color: #007BFF;
+            color: white;
+            padding: 12px 28px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+		
+		a:link {
+		 color: white;
+		 }
+
+        /* visited link*/
+		
+		 a:visited {
+		 color: grey;
+		 }
+		 
+		/* mouse over link*/
+		
+		 a:hover {
+		 color: yellow;
+		 }
+		 
+		 a:link {
+			text-decoration: none;
+		}
+
+		a:visited {
+		  text-decoration: none;
+		}
+
+		a:hover {
+		  text-decoration: underline;
+		}
+
+		a:active {
+		  text-decoration: underline;
+		}
+        button {
+		background-color: #007BFF;
+		color: white;
+		padding: 12px 28px;
+		border: none;
+		border-radius: 6px;
+		font-size: 16px;
+		font-weight: bold;
+		cursor: pointer;
+		transition: background-color 0.3s ease;
+        }
+        button:hover {
+		background-color: #0056b3;
+		}
+</style>
+<body style="background-color: #0D3B66;">
+<div class="container">
+<center>
+<h1>The Creative Range</h1>
+<p>Based on the range, you can answer the following questions</p>
+<p>These questions will show you your top 6 jobs most suited to you after completion.</p>
+
+<form id="creativeForm">
+<ul class ="survey">
+
+	<li> 
+    <h3><strong>Question 1</strong></h3>
+    <p><strong>Which environment are you most comfortable in?</strong></p>
+    <ul class="choices"> 
+        <li><label><input type="radio" name="question0" value="A" data-points="1" required /> <span>A structured office with clear rules</span></label></li>
+        <li><label><input type="radio" name="question0" value="B" data-points="4" required /> <span>A flexible studio space with freedom to explore</span></label></li>
+        <li><label><input type="radio" name="question0" value="C" data-points="3" required /> <span>A collaborative workshop with group brainstorming</span></label></li>
+        <li><label><input type="radio" name="question0" value="D" data-points="2" required /> <span>A quiet personal space for your creative thoughts</span></label></li>
+    </ul>
+</li>
+
+<li> 
+    <h3><strong>Question 2</strong></h3>
+    <p><strong>How do you prefer solving problems?</strong></p>
+    <ul class="choices"> 
+        <li><label><input type="radio" name="question1" value="A" data-points="1" required /> <span>Following step-by-step methods</span></label></li>
+        <li><label><input type="radio" name="question1" value="B" data-points="4" required /> <span>Brainstorming new ideas and experimenting</span></label></li>
+        <li><label><input type="radio" name="question1" value="C" data-points="3" required /> <span>Combining logic with creative thinking</span></label></li>
+        <li><label><input type="radio" name="question1" value="D" data-points="2" required /> <span>Getting ideas from art,design, or even nature</span></label></li>
+    </ul>
+</li>
+
+<li> 
+    <h3><strong>Question 3</strong></h3>
+    <p><strong>What activity seems more exciting to do?</strong></p>
+    <ul class="choices"> 
+        <li><label><input type="radio" name="question2" value="A" data-points="1" required /> <span>Organizing data</span></label></li>
+        <li><label><input type="radio" name="question2" value="B" data-points="4" required /> <span>Sketching, Painting or designing</span></label></li>
+        <li><label><input type="radio" name="question2" value="C" data-points="3" required /> <span>Writing stories or poems</span></label></li>
+        <li><label><input type="radio" name="question2" value="D" data-points="2" required /> <span>Performing or presenting</span></label></li>
+    </ul>
+</li>
+
+<li> 
+    <h3><strong>Question 4</strong></h3>
+    <p><strong>What would most motivate you in your career?</strong></p>
+    <ul class="choices"> 
+        <li><label><input type="radio" name="question3" value="A" data-points="1" required /> <span>Stability or good security</span></label></li>
+        <li><label><input type="radio" name="question3" value="B" data-points="4" required /> <span>Oppurtunities to innovate</span></label></li>
+        <li><label><input type="radio" name="question3" value="C" data-points="3" required /> <span>Recognition for originality</span></label></li>
+        <li><label><input type="radio" name="question3" value="D" data-points="2" required /> <span>Freedom to explore more projects</span></label></li>
+    </ul>
+</li>
+
+<li> 
+    <h3><strong>Question 5</strong></h3>
+    <p><strong>What is your preference when you want to learn new skills?</strong></p>
+    <ul class="choices"> 
+        <li><label><input type="radio" name="question4" value="A" data-points="1" required /> <span>Structured training</span></label></li>
+        <li><label><input type="radio" name="question4" value="B" data-points="4" required /> <span>Hand-on experiments</span></label></li>
+        <li><label><input type="radio" name="question4" value="C" data-points="3" required /> <span>Learning the skills with your peers</span></label></li>
+        <li><label><input type="radio" name="question4" value="D" data-points="2" required /> <span>By observing and gaining inspiration while doing it</span></label></li>
+    </ul>
+</li>
+
+<li> 
+    <h3><strong>Question 6</strong></h3>
+    <p><strong>What is your primary source of inspiration for new projects?</strong></p>
+    <ul class="choices"> 
+        <li><label><input type="radio" name="question5" value="A" data-points="2" required /> <span>Competive work</span></label></li>
+        <li><label><input type="radio" name="question5" value="B" data-points="3" required /> <span>Nature and daily life</span></label></li>
+        <li><label><input type="radio" name="question5" value="C" data-points="4" required /> <span>Art history and theory</span></label> </li>
+        <li><label><input type="radio" name="question5" value="D" data-points="1" required /> <span>Trending social media content, making you do something trendy</span></label></li>
+    </ul>
+</li>
+
+<li> 
+    <h3><strong>Question 7</strong></h3>
+    <p><strong>When facing a creative wall, what would you do?</strong></p>
+    <ul class="choices"> 
+        <li><label><input type="radio" name="question6" value="A" data-points="4" required /> <span>Seek inspiration from art,music or nature</span></label></li>
+        <li><label><input type="radio" name="question6" value="B" data-points="2" required /> <span>Take a break to collect your thoughts and try again</span></label></li>
+        <li><label><input type="radio" name="question6" value="C" data-points="1" required /> <span>Push through and keep on trying until you overcome it</span></label></li>
+        <li><label><input type="radio" name="question6" value="D" data-points="3" required /> <span>Talk to everyone around you and get new ideas.</span></label></li>
+    </ul>
+</li>
+
+<li>  
+	<h3><strong>Question 8</strong></h3>
+	<p><strong>How do you measure the success of a creative project?</strong></p>
+	<ul class="choices"> 
+	    <li><label><input type="radio" name="question7" value="A" data-points="4" required /> <span>By the visual quality</span></label></li>
+        <li><label><input type="radio" name="question7" value="B" data-points="2" required /> <span>By the public attention</span></label></li>
+		<li><label><input type="radio" name="question7" value="C" data-points="1" required /> <span>Meeting client expectations</span></label></li>
+		<li><label><input type="radio" name="question7" value="D" data-points="3" required /> <span>How fast it was finished</span></label></li>
+	
+	</ul>
+</li> </ul> <button type="submit"><b><i>Check your Top 6 ranking jobs best suited for you!!!</i></b></button>
+</form> </center>
+</div> ```
+
+</center>
+</div>
+<script>
+if (performance.navigation.type === 2) {
+    location.reload(); 
+}
+
+window.onload = function() {
+    if (!localStorage.getItem("quizStarted")) {
+        window.location.replace("index.html");
+        return;
+    }
+
+    if (localStorage.getItem("quizComplete") === "true") {
+        window.location.replace("LastPageResult.html");
+        return;
+    }
+
+    if (!localStorage.getItem("question0_points")) {
+        document.querySelectorAll("input[type=radio]").forEach(input => {
+            input.checked = false;
+        });
+    } else {
+        document.querySelectorAll("input[type=radio]").forEach(input => {
+            const saved = localStorage.getItem(input.name);
+            if (saved && input.value === saved) {
+                input.checked = true;
+            }
+        });
+    }
+};
+
+document.querySelectorAll('input[type="radio"]').forEach(input => {
+    input.addEventListener("change", function() {
+        localStorage.setItem(this.name, this.value);
+        localStorage.setItem(this.name + "_points", this.getAttribute("data-points"));
+    });
+});
+
+document.querySelector("#creativeForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    let jobScores = {
+        "Graphic Designer": 0,
+        "Writer": 0,
+        "Performer": 0,
+        "Creative Marketer": 0,
+        "Innovator": 0,
+        "Analyst": 0,
+        "Artist": 0,
+        "UX Designer": 0
+    };
+
+    document.querySelectorAll("input[type=radio]:checked").forEach(input => {
+        let points = parseInt(input.dataset.points);
+        let question = input.name;
+
+        switch(question) {
+            case "question0":
+                if(input.value==="A") jobScores["Analyst"]+=points;
+                if(input.value==="B") jobScores["Graphic Designer"]+=points;
+                if(input.value==="C") jobScores["Creative Marketer"]+=points;
+                if(input.value==="D") jobScores["Writer"]+=points;
+                break;
+            case "question1":
+                if(input.value==="A") jobScores["Analyst"]+=points;
+                if(input.value==="B") jobScores["Innovator"]+=points;
+                if(input.value==="C") jobScores["UX Designer"]+=points;
+                if(input.value==="D") jobScores["Artist"]+=points;
+                break;
+            case "question2":
+                if(input.value==="A") jobScores["Analyst"]+=points;
+                if(input.value==="B") jobScores["Graphic Designer"]+=points;
+                if(input.value==="C") jobScores["Writer"]+=points;
+                if(input.value==="D") jobScores["Performer"]+=points;
+                break;
+            case "question3":
+                if(input.value==="A") jobScores["Analyst"]+=points;
+                if(input.value==="B") jobScores["Innovator"]+=points;
+                if(input.value==="C") jobScores["Creative Marketer"]+=points;
+                if(input.value==="D") jobScores["Writer"]+=points;
+                break;
+            case "question4":
+                if(input.value==="A") jobScores["Analyst"]+=points;
+                if(input.value==="B") jobScores["Artist"]+=points;
+                if(input.value==="C") jobScores["Creative Marketer"]+=points;
+                if(input.value==="D") jobScores["Writer"]+=points;
+                break;
+            case "question5":
+                if(input.value==="A") jobScores["Performer"]+=points;
+                if(input.value==="B") jobScores["Writer"]+=points;
+                if(input.value==="C") jobScores["Artist"]+=points;
+                if(input.value==="D") jobScores["Creative Marketer"]+=points;
+                break;
+            case "question6":
+                if(input.value==="A") jobScores["Innovator"]+=points;
+                if(input.value==="B") jobScores["Artist"]+=points;
+                if(input.value==="C") jobScores["Writer"]+=points;
+                if(input.value==="D") jobScores["UX Designer"]+=points;
+                break;
+            case "question7":
+                if(input.value==="A") jobScores["Graphic Designer"]+=points;
+                if(input.value==="B") jobScores["Creative Marketer"]+=points;
+                if(input.value==="C") jobScores["Analyst"]+=points;
+                if(input.value==="D") jobScores["Performer"]+=points;
+                break;
+        }
+    });
+
+    let sortedJobs = Object.entries(jobScores).sort((a,b)=>b[1]-a[1]);
+    let topSix = sortedJobs.slice(0,6);
+
+    localStorage.setItem("jobResults", JSON.stringify(topSix));
+    localStorage.setItem("quizComplete", "true");
+
+    location.replace("LastPageResult.html");
+});
+
+</script>
+
+</body>
+</html>

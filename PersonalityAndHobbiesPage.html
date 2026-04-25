@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Survey page "Personality and Hobbies questions"</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style2.css">
+</head>
+<style>
+		.container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+        }
+		
+		center {
+			color: black;
+			font-size: 20px;
+			}
+			
+		ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		}
+		
+		a:link {
+		 color: white;
+		 }
+
+        /* visited link*/
+		
+		 a:visited {
+		 color: grey;
+		 }
+		 
+		/* mouse over link*/
+		
+		 a:hover {
+		 color: yellow;
+		 }
+		 
+		 a:link {
+			text-decoration: none;
+		}
+
+		a:visited {
+		  text-decoration: none;
+		}
+
+		a:hover {
+		  text-decoration: underline;
+		}
+
+		a:active {
+		  text-decoration: underline;
+		}
+		button {
+		background-color: #007BFF;
+		color: white;
+		padding: 12px 28px;
+		border: none;
+		border-radius: 6px;
+		font-size: 16px;
+		font-weight: bold;
+		cursor: pointer;
+		transition: background-color 0.3s ease;
+        }
+        button:hover {
+		background-color: #0056b3;
+		}
+		.progress-container {
+		width: 50%;              
+		margin: 20px auto;       
+		background-color: #eee;
+		border-radius: 5px;
+		height: 20px;
+		}
+
+		.progress-bar {
+		height: 100%;
+		background-color: #4caf50;
+		border-radius: 5px;
+		}	
+
+		.progress-text {
+		text-align: center;
+		color: white;
+		font-size: 18px;
+		margin-top: 8px;
+		}
+	
+</style>
+<body style="background-color: #0D3B66;">
+<div class="container">
+<center>
+<h1>Personality and Hobbies Questions [2]</h1>
+<br>
+<p>The second part of the Questionnaire</p>
+<p>This part consists of questions asking you about what personality you have towards work and your hobbies.</p>
+<form id ="personalityForm">
+<ul class ="survey">
+
+    <li> 
+        <h3><strong>Question 1</strong></h3>
+        <p><strong>What type of field you’re interested in?</strong></p>
+        <ul class="choices"> 
+            <li><label><input type="radio" name="question10" value="A" data-points="4" required /> <span>Physical education</span></label></li>
+            <li><label><input type="radio" name="question10" value="B" data-points="2" required /> <span>Environmental</span></label></li>
+            <li><label><input type="radio" name="question10" value="C" data-points="3" required /> <span>Science and technology</span></label></li>
+            <li><label><input type="radio" name="question10" value="D" data-points="1" required /> <span>Politics</span></label></li>
+        </ul>
+    </li>
+
+    <li> 
+        <h3><strong>Question 2</strong></h3>
+        <p><strong>Is your hobbies more on _________?</strong></p>
+        <ul class="choices"> 
+            <li><label><input type="radio" name="question11" value="A" data-points="4" required /> <span>Sports</span></label></li>
+            <li><label><input type="radio" name="question11" value="B" data-points="2" required /> <span>Gardening</span></label></li>
+            <li><label><input type="radio" name="question11" value="C" data-points="3" required /> <span>Astronomy</span></label></li>
+            <li><label><input type="radio" name="question11" value="D" data-points="1" required /> <span>Public speaking</span></label></li>
+        </ul>
+    </li>
+
+    <li> 
+        <h3><strong>Question 3</strong></h3>
+        <p><strong>What motivates you most?</strong></p>
+        <ul class="choices"> 
+            <li><label><input type="radio" name="question12" value="A" data-points="4" required /> <span>Money</span></label></li>
+            <li><label><input type="radio" name="question12" value="B" data-points="3" required /> <span>Status</span></label></li>
+            <li><label><input type="radio" name="question12" value="C" data-points="2" required /> <span>Purpose</span></label></li>
+            <li><label><input type="radio" name="question12" value="D" data-points="1" required /> <span>Personal growth</span></label></li>
+        </ul>
+    </li>
+
+    <li> 
+        <h3><strong>Question 4</strong></h3>
+        <p><strong>What is your preferred work environment?</strong></p>
+        <ul class="choices"> 
+            <li><label><input type="radio" name="question13" value="A" data-points="1" required /> <span>Traditional (private space)</span></label></li>
+            <li><label><input type="radio" name="question13" value="B" data-points="2" required /> <span>Coworking (Shared spaces)</span></label></li>
+            <li><label><input type="radio" name="question13" value="C" data-points="3" required /> <span>Remote work (flexible location)</span></label></li>
+            <li><label><input type="radio" name="question13" value="D" data-points="4" required /> <span>Hybrid work (mixed flexible location)</span></label></li>
+        </ul>
+    </li>
+
+    <li> 
+        <h3><strong>Question 5</strong></h3>
+        <p><strong>What is your work personality through facing challenges?</strong></p>
+        <ul class="choices"> 
+            <li><label><input type="radio" name="question14" value="A" data-points="3" required /> <span>Analytical</span></label></li>
+            <li><label><input type="radio" name="question14" value="B" data-points="4" required /> <span>Adventurous</span></label></li>
+            <li><label><input type="radio" name="question14" value="C" data-points="2" required /> <span>Collaborative</span></label></li>
+            <li><label><input type="radio" name="question14" value="D" data-points="1" required /> <span>Creative</span></label></li>
+            <li><label><input type="radio" name="question14" value="E" data-points="2" required /> <span>Organized</span></label></li>
+        </ul>
+    </li>
+
+    <li> 
+        <h3><strong>Question 6</strong></h3>
+        <p><strong>When you start a new hobby, what excites you most?</strong></p>
+        <ul class="choices"> 
+            <li><label><input type="radio" name="question15" value="A" data-points="4" required /> <span>Competition</span></label></li>
+            <li><label><input type="radio" name="question15" value="B" data-points="3" required /> <span>Expressing yourself</span></label></li>
+            <li><label><input type="radio" name="question15" value="C" data-points="2" required /> <span>Sharing it to others</span></label></li>
+            <li><label><input type="radio" name="question15" value="D" data-points="1" required /> <span>Learning how things work</span></label></li>
+        </ul>
+    </li>
+
+    <li> 
+        <h3><strong>Question 7</strong></h3>
+        <p><strong>What hobbies would you like to explore more?</strong></p>
+        <ul class="choices"> 
+            <li><label><input type="radio" name="question16" value="A" data-points="3" required /> <span>Music instruments</span></label></li>
+            <li><label><input type="radio" name="question16" value="B" data-points="2" required /> <span>Learning History</span></label></li>
+            <li><label><input type="radio" name="question16" value="C" data-points="1" required /> <span>Computer games</span></label></li>
+            <li><label><input type="radio" name="question16" value="D" data-points="4" required /> <span>Rock climbing</span></label></li>
+        </ul>
+    </li>
+
+    <li> 
+        <h3><strong>Question 8</strong></h3>
+        <p><strong>What is your most dominant trait?</strong></p>
+        <ul class="choices"> 
+            <li><label><input type="radio" name="question17" value="A" data-points="4" required /> <span>Integrity</span></label></li>
+            <li><label><input type="radio" name="question17" value="B" data-points="3" required /> <span>Honesty</span></label></li>
+            <li><label><input type="radio" name="question17" value="C" data-points="2" required /> <span>Loyalty</span></label></li>
+            <li><label><input type="radio" name="question17" value="D" data-points="1" required /> <span>Empathy</span></label></li>
+            <li><label><input type="radio" name="question17" value="E" data-points="2" required /> <span>Kindness</span></label></li>
+        </ul>
+    </li>
+
+    <li> 
+        <h3><strong>Question 9</strong></h3>
+        <p><strong>What would you do to improve your personality trait?</strong></p>
+        <ul class="choices"> 
+            <li><label><input type="radio" name="question18" value="A" data-points="1" required /> <span>Embracing your traits</span></label></li>
+            <li><label><input type="radio" name="question18" value="B" data-points="2" required /> <span>Improve communication skills</span></label></li>
+            <li><label><input type="radio" name="question18" value="C" data-points="3" required /> <span>Be a consistent learner</span></label></li>
+            <li><label><input type="radio" name="question18" value="D" data-points="4" required /> <span>Setting clear goals</span></label></li>
+        </ul>
+
+<li> 
+    <h3><strong>Question 10</strong></h3>
+    <p><strong>What school subject do you find generally easy or fun to do?</strong></p>
+    <ul class="choices"> 
+        <li><label><input type="radio" name="question19" value="A" data-points="4" required /> <span>Physical education</span></label></li>
+        <li><label><input type="radio" name="question19" value="B" data-points="3" required /> <span>Science</span></label></li>
+        <li><label><input type="radio" name="question19" value="C" data-points="2" required /> <span>Maths</span></label></li>
+        <li><label><input type="radio" name="question19" value="D" data-points="1" required /> <span>History</span></label></li>
+    </ul>
+<center>
+  <div class="progress-container">
+  <div class="progress-bar" style="width: 66%;"></div>
+</div>
+<p class="progress-text">Page 2 of 3</p>
+  <button type="submit"><b><i>Go to next set of questions  →</i></b></button>
+  <br><br>
+  <button type="button" onclick="history.back()">Go Back</button>
+
+</center>
+</form>
+
+<script>
+window.onload = function() {
+    if (!localStorage.getItem("quizStarted")) {
+        window.location.replace("index.html");
+        return;
+    }
+
+    document.querySelectorAll("input[type=radio]").forEach(input => {
+        const saved = localStorage.getItem(input.name);
+        if (saved && input.value === saved) {
+            input.checked = true;
+        }
+    });
+
+    document.querySelectorAll('input[type="radio"]').forEach(input => {
+        input.addEventListener("change", function() {
+            localStorage.setItem(this.name, this.value);
+            localStorage.setItem(this.name + "_points", this.getAttribute("data-points"));
+        });
+    });
+
+    document.querySelector("#personalityForm").addEventListener("submit", function(e) {
+        e.preventDefault(); 
+        window.location.href = "RealLifeSituationsQuestions.html";
+    });
+};
+
+</script>
+</body>
+</html>
+
+
+
+

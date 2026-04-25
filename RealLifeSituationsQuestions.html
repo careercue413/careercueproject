@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Survey page "Real life situations"</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style2.css">
+</head>
+<style>
+		.container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+            /* Set the height of the container to the viewport height */
+        }
+		
+		center {
+			color: black;
+			font-size: 20px;
+			}
+			
+		ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		}
+		
+		a:link {
+		 color: white;
+		 }
+
+        /* visited link*/
+		
+		 a:visited {
+		 color: grey;
+		 }
+		 
+		/* mouse over link*/
+		
+		 a:hover {
+		 color: yellow;
+		 }
+		 
+		 a:link {
+			text-decoration: none;
+		}
+
+		a:visited {
+		  text-decoration: none;
+		}
+
+		a:hover {
+		  text-decoration: underline;
+		}
+
+		a:active {
+		  text-decoration: underline;
+		}
+		button {
+		background-color: #007BFF;
+		color: white;
+		padding: 12px 28px;
+		border: none;
+		border-radius: 6px;
+		font-size: 16px;
+		font-weight: bold;
+		cursor: pointer;
+		transition: background-color 0.3s ease;
+        }
+        button:hover {
+		background-color: #0056b3;
+		}
+		.progress-container {
+		width: 50%;              
+		margin: 20px auto;       
+		background-color: #eee;
+		border-radius: 5px;
+		height: 20px;
+		}
+
+		.progress-bar {
+		height: 100%;
+		background-color: #4caf50;
+		border-radius: 5px;
+		}	
+
+		.progress-text {
+		text-align: center;
+		color: white;
+		font-size: 18px;
+		margin-top: 8px;
+		}
+	
+</style>
+<body style="background-color: #0D3B66;">
+<div class="container">
+<center>
+<h1>Real life situations [3]</h1>
+<br>
+<p>The last part of the Questionnaire</p>
+<p>This part consists of questions asking you about how well and how you treat real life situations</p>
+<form id="realLifeForm">
+<ul class ="survey">
+	<li> 
+    <h3><strong>Question 1</strong></h3>
+    <p><strong>If you were anonymously transferred 1 million dollars into your bank account, what would you do with that money?</strong></p>
+    <ul class="choices"> 
+        <li><label><input type="radio" name="question20" value="A" data-points="1" required /> <span>Keep the money for yourself</span></label></li>
+        <li><label><input type="radio" name="question20" value="B" data-points="2" required /> <span>Share the money with your family and friends</span></label></li>
+        <li><label><input type="radio" name="question20" value="C" data-points="4" required /> <span>Report the incident</span></label></li>
+        <li><label><input type="radio" name="question20" value="D" data-points="3" required /> <span>Leave the money untouched in the account</span></label></li>
+    </ul>
+</li>
+
+<li> 
+    <h3><strong>Question 2</strong></h3>
+    <p><strong>You arrive at a restaurant and have 30 minutes to finish your lunch, but the restaurant is full. What would you do in this situation?</strong></p>
+    <ul class="choices"> 
+        <li><label><input type="radio" name="question21" value="A" data-points="1" required /> <span>Wait until a table becomes available</span></label></li>
+        <li><label><input type="radio" name="question21" value="B" data-points="3" required /> <span>Go to another restaurant</span></label></li>
+        <li><label><input type="radio" name="question21" value="C" data-points="4" required /> <span>Order take-out</span></label></li>
+        <li><label><input type="radio" name="question21" value="D" data-points="2" required /> <span>Skip lunch and carry on with your day</span></label></li>
+    </ul>
+</li>
+
+<li> 
+    <h3><strong>Question 3</strong></h3>
+    <p><strong>If your friend did something really awful to you, what would you do?</strong></p>
+    <ul class="choices"> 
+        <li><label><input type="radio" name="question22" value="A" data-points="2" required /> <span>Forgive him/her</span></label></li>
+        <li><label><input type="radio" name="question22" value="B" data-points="1" required /> <span>Stop being friends with him/her</span></label></li>
+        <li><label><input type="radio" name="question22" value="C" data-points="4" required /> <span>Ask for a reason before judging him/her</span></label></li>
+        <li><label><input type="radio" name="question22" value="D" data-points="3" required /> <span>Stay friends but keep your distance</span></label></li>
+    </ul>
+</li>
+
+<li> 
+    <h3><strong>Question 4</strong></h3>
+    <p><strong>If you have an assignment due in 3 days, when would you start working on it?</strong></p>
+    <ul class="choices"> 
+        <li><label><input type="radio" name="question23" value="A" data-points="4" required /> <span>Start on the first day and do it as soon as possible</span></label></li>
+        <li><label><input type="radio" name="question23" value="B" data-points="3" required /> <span>Start on the second day</span></label></li>
+        <li><label><input type="radio" name="question23" value="C" data-points="1" required /> <span>Start on the last day</span></label></li>
+        <li><label><input type="radio" name="question23" value="D" data-points="2" required /> <span>Start on the first day and wait to finish until the last day</span></label></li>
+    </ul>
+</li>
+
+<li> 
+    <h3><strong>Question 5</strong></h3>
+    <p><strong>If your friends ask you to hang out, what would your answer be?</strong></p>
+    <ul class="choices"> 
+        <li><label><input type="radio" name="question24" value="A" data-points="4" required /> <span>Sure, let’s go</span></label></li>
+        <li><label><input type="radio" name="question24" value="B" data-points="1" required /> <span>I can’t go</span></label></li>
+        <li><label><input type="radio" name="question24" value="C" data-points="2" required /> <span>Let’s go another day</span></label></li>
+        <li><label><input type="radio" name="question24" value="D" data-points="3" required /> <span>I will be late</span></label></li>
+    </ul>
+</li>
+
+<li> 
+    <h3><strong>Question 6</strong></h3>
+    <p><strong>Tonight you have a football competition at the same time as an important family dinner. What would you do?</strong></p>
+    <ul class="choices"> 
+        <li><label><input type="radio" name="question25" value="A" data-points="4" required /> <span>Go to the competition</span></label></li>
+        <li><label><input type="radio" name="question25" value="B" data-points="3" required /> <span>Go to dinner with your family</span></label></li>
+        <li><label><input type="radio" name="question25" value="C" data-points="2" required /> <span>Try to attend both</span></label></li>
+        <li><label><input type="radio" name="question25" value="D" data-points="1" required /> <span>None of the above</span></label></li>
+    </ul>
+</li>
+
+<li> 
+    <h3><strong>Question 7</strong></h3>
+    <p><strong>You are sharing a pizza with your friends and there’s one slice left, but you’re still hungry. What would you do?</strong></p>
+    <ul class="choices"> 
+        <li><label><input type="radio" name="question26" value="A" data-points="1" required /> <span>Eat the last slice without hesitation</span></label></li>
+        <li><label><input type="radio" name="question26" value="B" data-points="3" required /> <span>Ask your friends if they want it before taking it</span></label></li>
+        <li><label><input type="radio" name="question26" value="C" data-points="4" required /> <span>Share the last slice</span></label></li>
+        <li><label><input type="radio" name="question26" value="D" data-points="2" required /> <span>Do nothing and stay hungry</span></label></li>
+    </ul>
+</li>
+
+<li> 
+    <h3><strong>Question 8</strong></h3>
+    <p><strong>You see an old lady struggling to carry a bag down the stairs, but you’re in a hurry. What would you do?</strong></p>
+    <ul class="choices"> 
+        <li><label><input type="radio" name="question27" value="A" data-points="4" required /> <span>Help her out</span></label></li>
+        <li><label><input type="radio" name="question27" value="B" data-points="1" required /> <span>Ignore her and carry on</span></label></li>
+        <li><label><input type="radio" name="question27" value="C" data-points="2" required /> <span>Ask somebody else to help her</span></label></li>
+        <li><label><input type="radio" name="question27" value="D" data-points="3" required /> <span>Advice her to use the lift</span></label></li>
+    </ul>
+</li>
+
+<li> 
+    <h3><strong>Question 9</strong></h3>
+    <p><strong>You have a presentation but need a leader. What would you do to find one?</strong></p>
+    <ul class="choices"> 
+        <li><label><input type="radio" name="question28" value="A" data-points="4" required /> <span>Volunteer to be the leader</span></label></li>
+        <li><label><input type="radio" name="question28" value="B" data-points="3" required /> <span>Ask if anyone wants to be the leader</span></label></li>
+        <li><label><input type="radio" name="question28" value="C" data-points="2" required /> <span>Vote for a leader</span></label></li>
+        <li><label><input type="radio" name="question28" value="D" data-points="1" required /> <span>Do nothing and wait for someone to make a move</span></label></li>
+    </ul>
+</li>
+
+<li> 
+    <h3><strong>Question 10</strong></h3>
+    <p><strong>You have an essay and need to choose a topic. Which topic would you choose?</strong></p>
+    <ul class="choices"> 
+        <li><label><input type="radio" name="question29" value="A" data-points="4" required /> <span>Engineering</span></label></li>
+        <li><label><input type="radio" name="question29" value="B" data-points="3" required /> <span>Science</span></label></li>
+        <li><label><input type="radio" name="question29" value="C" data-points="2" required /> <span>Psychology</span></label></li>
+        <li><label><input type="radio" name="question29" value="D" data-points="1" required /> <span>Sports</span></label></li>
+    </ul>
+<center>
+<div class="progress-container">
+  <div class="progress-bar" style="width: 100%;"></div>
+</div>
+<p class="progress-text">Page 3 of 3</p>
+  <button type="submit"><b><i>Check your result range →</i></b></button>
+  <br><br>
+  <button type="button" onclick="history.back()">Go Back</button>
+
+</center>
+</form>
+
+<script>
+window.onload = function() {
+    if (!localStorage.getItem("quizStarted")) {
+        window.location.replace("index.html");
+        return;
+    }
+
+    document.querySelectorAll("input[type=radio]").forEach(input => {
+        const saved = localStorage.getItem(input.name);
+        if (saved && input.value === saved) {
+            input.checked = true;
+        }
+    });
+
+    document.querySelectorAll('input[type="radio"]').forEach(input => {
+        input.addEventListener("change", function() {
+            localStorage.setItem(this.name, this.value);
+            localStorage.setItem(this.name + "_points", this.getAttribute("data-points"));
+        });
+    });
+
+    document.querySelector("#realLifeForm").addEventListener("submit", function(e) {
+        e.preventDefault(); 
+        window.location.href = "rangeresult_6.html";
+    });
+};
+
+
+</script>
+</body>
+</html>
+

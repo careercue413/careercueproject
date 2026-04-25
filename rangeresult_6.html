@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CareerCue Results by Range</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgba(13, 59, 102, 0.1); 
+    padding: 20px;
+}
+
+
+    center {
+		background: rgba(255, 255, 255, 0.85); 
+		backdrop-filter: blur(10px);           
+		padding: 40px;
+		border-radius: 20px;
+		box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+		max-width: 600px;
+		width: 100%;
+	}
+
+    h1 { font-size: 60px; }
+    
+    details > summary {
+    padding: 12px;
+    width: 100%;
+    background-color: #f8f9fa; /* Light grey instead of white */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: all 0.2s ease;
+    }
+
+	details > summary:hover {
+    background-color: #e9ecef;
+    border-color: #007BFF;
+	}
+
+	details > p {
+		padding: 15px;
+		background: #ffffff;
+		border-radius: 0 0 8px 8px;
+		border: 1px solid #eee;
+		border-top: none;
+	}
+    
+    #careerResult button {
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+        background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+        color: #0D3B66;
+        padding: 18px 35px;
+        border: none;
+        border-radius: 50px;
+        font-size: 18px;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        cursor: pointer;
+        box-shadow: 0 4px 15px rgba(255, 165, 0, 0.4);
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    #careerResult button:hover {
+        transform: scale(1.07);
+        box-shadow: 0 8px 25px rgba(255, 165, 0, 0.6);
+        background: linear-gradient(135deg, #FFE44D 0%, #FFB732 100%);
+    }
+
+    button {
+        background-color: #007BFF;
+        color: white;
+        padding: 12px 28px;
+        border: none;
+        border-radius: 6px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+	@media (max-width: 600px) {
+    h1 { font-size: 40px; }
+    center { padding: 20px; }
+    .container { padding: 10px; }
+	}
+</style>
+
+<body style="background-image: url('confetti.gif'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed;">
+<div class="container">
+<center>
+    <h1>CareerCue Results</h1>
+    <p>Your score places you in one of the ranges below</p>
+    <br>
+
+    <details>
+        <summary><b>Range 30-60</b></summary>
+        <p>Suited for careers emphasizing creativity and flexibility (e.g., Artist, Designer).</p>
+    </details>
+    <br>
+
+    <details>
+        <summary><b>Range 61–90</b></summary>
+        <p>Suited for balanced careers (e.g., Project Manager, Educator).</p>
+    </details>
+    <br>
+
+    <details>
+        <summary><b>Range 91–120</b></summary>
+        <p>Suited for leadership and analytical roles (e.g., Engineer, Executive).</p>
+    </details>
+    <br>
+
+    <div id="careerResult"></div>
+    <button onclick="calculateCareerCue()">See My Result</button>
+
+
+</center>
+</div>
+</body>
+</html>
+
+
+<script>
+if (performance.navigation.type === 2) {
+    location.reload(); 
+}
+
+window.onload = function() {
+    if (!localStorage.getItem("quizStarted")) {
+        window.location.replace("index.html");
+        return;
+    }
+
+    if (localStorage.getItem("finalQuestionsStarted") === "true") {
+        if (localStorage.getItem("quizComplete") === "true") {
+            window.location.replace("LastPageResult.html");
+        } else {
+            history.forward(); 
+        }
+        return;
+    }
+
+    history.pushState(null, null, location.href);
+    window.onpopstate = function () {
+        history.pushState(null, null, location.href);
+    };
+};
+
+function calculateCareerCue() {
+    let totalPoints = 0;
+
+    for (let i = 0; i < 30; i++) {
+        const points = localStorage.getItem("question" + i + "_points");
+        if (points) {
+            totalPoints += parseInt(points);
+        }
+    }
+
+    for (let i = 0; i <= 30; i++) {
+        localStorage.removeItem("question" + i);
+    }
+
+    let range = "";
+    let destination = "";
+
+    if (totalPoints >= 30 && totalPoints <= 60) {
+        range = "Creativity";
+        destination = "CreativeRangeQuestions.html";
+    } else if (totalPoints >= 61 && totalPoints <= 90) {
+        range = "Balanced";
+        destination = "BalancedRangeQuestions.html";
+    } else if (totalPoints >= 91 && totalPoints <= 120) {
+        range = "Leadership";
+        destination = "LeadershipRangeQuestions.html";
+    } else {
+        range = "Unknown"; 
+    }
+
+    localStorage.setItem("userRange", range);
+
+    const resultDiv = document.getElementById("careerResult");
+    resultDiv.innerHTML = `
+        <div style="background: rgba(255,255,255,0.8); padding: 20px; border-radius: 10px; margin-top: 20px;">
+            <h2 style="color: #0D3B66;">Your Result</h2>
+            <p><strong>Total Score:</strong> ${totalPoints}</p>
+            <p><strong>Your Category:</strong> ${range}</p>
+            <button onclick="startFinalPath('${destination}')">Continue to Final Questions →</button>
+        </div>
+    `;
+
+    if(event && event.target) {
+        event.target.style.display = "none";
+    }
+}
+
+function startFinalPath(destination) {
+    localStorage.setItem("finalQuestionsStarted", "true");
+    localStorage.setItem("quizCompleted", "true"); 
+    window.location.replace(destination);
+}
+</script>
+
+</center>
+</body>
+</html>

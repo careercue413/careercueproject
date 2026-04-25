@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home Page</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<style>
+
+		.container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+		}	
+			
+		center {
+			color: white;
+			}
+			
+		h1 { font-size: 60px;
+		}
+		
+		center { font-size: 20px;
+		}
+		
+		a:link {
+		 color: white;
+		 }
+
+        /* visited link*/
+		
+		 a:visited {
+		 color: grey;
+		 }
+		 
+		/* mouse over link*/
+		
+		 a:hover {
+		 color: yellow;
+		 }
+		 
+		 a:link {
+			text-decoration: none;
+		}
+
+		a:visited {
+		  text-decoration: none;
+		}
+
+		a:hover {
+		  text-decoration: underline;
+		}
+
+		a:active {
+		  text-decoration: underline;
+		}
+		
+</style>
+<body style="background-color: #0D3B66;">
+
+<div class= "container">
+<center>
+
+
+<h1><img src="CareerCue-logo-transparent.png" alt="CareerCue Logo" width="500" style="vertical-align:middle;" class="fade-in"></h1>
+
+
+<p style="font-size:22px;font-weight:bold; color:#00FFFF;">Created by "Chan Wu Eric (20246643) and Sandhu Jeevanjot Singh (20255585)"</p>
+<br>
+<h2> Instructions of Survey </h2>
+<p>The questionnaires only consists of 10 Multiple choices (MC) for the first part and for the second part 8 Multiple choices (MC) </p>
+<p>The questionnaires consists of three sections for the first part and one section in the second part <br>Questions that will ask about creativeness, personality and hobbies, and Real life situations in the first part. For the second part we will ask some more detailed questions in relation on your answers on the first part </p>
+<br>
+<a href="javascript:void(0)" 
+   onclick="startQuiz()" 
+   style="color:#FFDB58; font-size:30px;"> 
+   <i><b>Click to move forward to the first part of the questions →</b></i>
+</a>
+</a>
+<br>
+<br>
+<p><i> *Your choices will not be disclosed or used in any type of manner. It will only be stored through the database and will be referenced for research purposes*</i></p>
+</center>
+</div>
+<script>
+document.querySelector("#startQuizButton").addEventListener("click", function() {
+    localStorage.clear(); 
+    localStorage.setItem("quizStarted", "true"); 
+    window.location.href = "Page1.html"; 
+});
+
+function startQuiz() {
+    
+    localStorage.clear(); 
+    
+    
+    localStorage.setItem("quizStarted", "true");
+    
+    
+    sessionStorage.clear();
+
+   
+    window.location.href = "CreativeQuestionsPage.html";
+}
+</script>
+
+</body>
+</html>
+
+

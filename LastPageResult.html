@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Career Results - CareerCue</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .results-card {
+            background: rgba(0, 0, 0, 0.88) !important; 
+            backdrop-filter: blur(25px); 
+            -webkit-backdrop-filter: blur(25px);
+            padding: 40px;
+            border-radius: 24px;
+            border: 2px solid rgba(255, 255, 255, 0.2); 
+            max-width: 750px;
+            width: 100%;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+        }
+
+        h1 { 
+            font-size: 55px; 
+            margin: 0 0 10px 0;
+            color: white;
+            text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8), 0px 0px 15px rgba(0, 0, 0, 0.5); 
+        }
+
+        .subtitle {
+            font-size: 19px;
+            color: #ffffff;
+            margin-bottom: 30px;
+            font-weight: 600;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
+        }
+
+        details {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            margin-bottom: 15px;
+            text-align: left;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        summary {
+            padding: 18px 25px;
+            font-size: 20px;
+            font-weight: 700;
+            cursor: pointer;
+            color: #ffffff;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+        }
+
+        details p {
+            padding: 0 25px 20px 25px;
+            color: #ffffff; 
+            line-height: 1.7;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
+        }
+
+        .restart-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%) !important;
+            color: white !important;
+            padding: 18px 45px !important;
+            border: none !important;
+            border-radius: 50px !important;
+            font-size: 18px !important;
+            font-weight: 800 !important;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            cursor: pointer;
+            box-shadow: 0 10px 20px rgba(0, 114, 255, 0.4);
+            transition: all 0.3s ease;
+            margin-top: 30px;
+            border-bottom: 4px solid #0056b3 !important;
+        }
+
+        .restart-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(0, 114, 255, 0.6);
+            filter: brightness(1.1);
+        }
+
+        .restart-btn:active {
+            transform: translateY(1px);
+            border-bottom: none !important;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 38px; }
+            .results-card { padding: 25px; }
+        }
+    </style>
+</head>
+
+<body style="background-image: url('career.gif');
+             background-size: cover;
+			 background-position: center;
+			 background-repeat: no-repeat;
+			 background-attachment: fixed;
+			 margin: 0;">
+<div class="container">
+<center>
+
+<h1><img src="CareerCue-logo-transparent.png" alt="CareerCue Logo" width="500" style="vertical-align:middle;" class="fade-in"></h1>
+<p><strong>Thank you for spending your time answering our questionnaires</strong></p>
+<p><strong>This is your top 6 results</strong></p>
+<br>
+
+<div align="left">
+<details>
+	<summary><b> The Top 1</b> </summary>
+	<p>Job detail of this and state how many points you get from the questionnaire which is the most</p>
+</details>
+</div>
+<br>
+<div align="center">
+<details>
+	<summary><b> The Top 2</b> </summary>
+	<p>Job detail of this and state how many points you get from the questionnaire which is the most</p>
+</details>
+</div>
+<br>
+<div align="right">
+<details>
+	<summary><b> The Top 3</b> </summary>
+	<p>Job detail of this and state how many points you get from the questionnaire which is the most</p>
+</details>
+</div>
+<br>
+<div align="right">
+<details>
+	<summary><b> The Top 4</b> </summary>
+	<p>Job detail of this and state how many points you get from the questionnaire which is the most</p>
+</details>
+</div>
+<br>
+<div align="center">
+<details>
+	<summary><b> The Top 5</b> </summary>
+	<p>Job detail of this and state how many points you get from the questionnaire which is the most</p>
+</details>
+</div>
+<br>
+<div align="left">
+<details>
+	<summary><b> The Top 6	</b> </summary>
+	<p>Job detail of this and state how many points you get from the questionnaire which is the most</p>
+</details>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+<script>
+const jobDescriptions = {
+  "Graphic Designer": "Creates visual concepts and layouts for print and digital media.",
+  "Writer": "Crafts stories, articles, or content to inform and inspire audiences.",
+  "Performer": "Engages audiences through acting, music, or live presentations.",
+  "Creative Marketer": "Develops campaigns that connect products with people in innovative ways.",
+  "Innovator": "Generates new ideas and solutions to drive progress and change.",
+  "Analyst": "Interprets data and trends to support decision-making.",
+  "Artist": "Expresses creativity through painting, sculpture, or other art forms.",
+  "UX Designer": "Designs user-friendly digital experiences and interfaces.",
+  "Engineer": "Applies scientific and mathematical knowledge to design and build solutions.",
+  "Teacher": "Educates and inspires students to make them the best versions of themselves.",
+  "Researcher": "Investigates topics to expand knowledge and provide insights to the research.",
+  "Data Analyst": "Collects, processes, and interprets data to guide decisions.",
+  "HR Specialist": "Supports employee relations, recruitment, and workplace culture.",
+  "Academic": "Conducts academic research and contributes to teaching in higher education.",
+  "Executive Manager": "Oversees organizations, sets vision, and drives results.",
+  "Project Manager": "Plans, organizes, and ensures objectives are met on time.",
+  "Human Resources Director": "Leads people strategy, employee development, and workplace culture.",
+  "Consultant / Policy Analyst": "Uses data and evidence to advise and design frameworks.",
+  "Entrepreneur": "Takes initiative, assumes risk, and leads ventures with innovation.",
+  "Specialized Professional": "Demonstrates responsibility and leadership in specialized fields such as medicine, law, or architecture.",
+  "Academic Leader": "Guides research teams and educates future professionals."
+};
+
+window.onload = function() {
+    localStorage.setItem("quizCompleted", "true");
+	history.pushState(null, null, location.href);
+	window.onpopstate = function () {
+	  history.go(1);
+	};
+
+    document.querySelectorAll("input[type=radio]").forEach(input => {
+        input.checked = false;
+    });
+    let results = JSON.parse(localStorage.getItem("jobResults"))
+	           || JSON.parse(localStorage.getItem("balancedResults")) 
+			   || JSON.parse(localStorage.getItem("leadershipResults"));
+
+    if (!results) {
+    localStorage.clear();
+    location.replace("index.html"); 
+    return;
+    }
+
+    document.querySelectorAll("details").forEach((detail, index) => {
+        if(index < 6 && results[index]) {
+            let job = results[index][0];
+            let points = results[index][1];
+            detail.querySelector("p").innerText = job + " (" + points + " points) — " + jobDescriptions[job];
+        }
+    });
+};
+	
+
+function resetResults() {
+    localStorage.clear();
+    window.location.replace("index.html");
+}
+</script>
+
+<button onclick="resetResults()" class="restart-btn">Back to Main Menu</button>
+
+</center>
+</div>
+</body>
+</html>

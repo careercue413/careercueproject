@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Survey page "Creative questions"</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style2.css">
+</head>
+<style>
+		.container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+        }
+		
+		center {
+			color: black;
+			font-size: 20px;
+			}
+			
+		ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		}
+		
+		a:link {
+		 color: white;
+		 }
+
+        /* visited link*/
+		
+		 a:visited {
+		 color: grey;
+		 }
+		 
+		/* mouse over link*/
+		
+		 a:hover {
+		 color: yellow;
+		 }
+		 
+		 a:link {
+			text-decoration: none;
+		}
+
+		a:visited {
+		  text-decoration: none;
+		}
+
+		a:hover {
+		  text-decoration: underline;
+		}
+
+		a:active {
+		  text-decoration: underline;
+		}
+        button {
+		background-color: #007BFF;
+		color: white;
+		padding: 12px 28px;
+		border: none;
+		border-radius: 6px;
+		font-size: 16px;
+		font-weight: bold;
+		cursor: pointer;
+		transition: background-color 0.3s ease;
+        }
+        button:hover {
+		background-color: #0056b3;
+		}
+		.progress-container {
+		width: 50%;              
+		margin: 20px auto;       
+		background-color: #eee;
+		border-radius: 5px;
+		height: 20px;
+		}
+
+		.progress-bar {
+		height: 100%;
+		background-color: #4caf50;
+		border-radius: 5px;
+		}	
+
+		.progress-text {
+		text-align: center;
+		color: white;
+		font-size: 18px;
+		margin-top: 8px;
+		}
+	
+</style>
+<body style="background-color: #0D3B66;">
+
+<center>
+<h1>Creative Questions [1]</h1>
+<p>The first part of the Questionnaire</p>
+<p>This part consists of questions asking you about your imagination and creativeness</p>
+
+<form id ="creativeForm">
+<ul class ="survey">
+
+
+	<li> 
+    <h3><strong>Question 1</strong></h3>
+    <p><strong>If you were to choose a position in football, which position would you want to be?</strong></p>
+    <ul class="choices"> 
+        <li><label><input type="radio" name="question0" value="A" data-points="4" required /> <span>Forward</span></label></li>
+        <li><label><input type="radio" name="question0" value="B" data-points="3" required /> <span>Midfielder</span></label></li>
+        <li><label><input type="radio" name="question0" value="C" data-points="2" required /> <span>Defender</span></label></li>
+        <li><label><input type="radio" name="question0" value="D" data-points="1" required /> <span>Goalkeeper</span></label></li>
+    </ul>
+</li>
+
+<li> 
+    <h3><strong>Question 2</strong></h3>
+    <p><strong>What superpower would you want to have?</strong></p>
+    <ul class="choices"> 
+        <li><label><input type="radio" name="question1" value="A" data-points="4" required /> <span>Super Speed</span></label></li>
+        <li><label><input type="radio" name="question1" value="B" data-points="3" required /> <span>Super Strength</span></label></li>
+        <li><label><input type="radio" name="question1" value="C" data-points="2" required /> <span>Teleportation</span></label></li>
+        <li><label><input type="radio" name="question1" value="D" data-points="1" required /> <span>Mind Reading</span></label></li>
+    </ul>
+</li>
+
+<li> 
+    <h3><strong>Question 3</strong></h3>
+    <p><strong>What animal would you want to be?</strong></p>
+    <ul class="choices"> 
+        <li><label><input type="radio" name="question2" value="A" data-points="4" required /> <span>Lion</span></label></li>
+        <li><label><input type="radio" name="question2" value="B" data-points="3" required /> <span>Dolphin</span></label></li>
+        <li><label><input type="radio" name="question2" value="C" data-points="2" required /> <span>Chimpanzee</span></label></li>
+        <li><label><input type="radio" name="question2" value="D" data-points="1" required /> <span>Sloth</span></label></li>
+    </ul>
+</li>
+
+<li> 
+    <h3><strong>Question 4</strong></h3>
+    <p><strong>If a movie were made about you, what would its title be?</strong></p>
+    <ul class="choices"> 
+        <li><label><input type="radio" name="question3" value="A" data-points="1" required /> <span>The Organizer</span></label></li>
+        <li><label><input type="radio" name="question3" value="B" data-points="2" required /> <span>The Team Player</span></label></li>
+        <li><label><input type="radio" name="question3" value="C" data-points="4" required /> <span>The Chosen One</span></label></li>
+        <li><label><input type="radio" name="question3" value="D" data-points="3" required /> <span>The Strategist</span></label></li>
+    </ul>
+</li>
+
+<li> 
+    <h3><strong>Question 5</strong></h3>
+    <p><strong>If someone were to think of the type of person you would be, what would you want them to think about you?</strong></p>
+    <ul class="choices"> 
+        <li><label><input type="radio" name="question4" value="A" data-points="4" required /> <span>Outgoing</span></label></li>
+        <li><label><input type="radio" name="question4" value="B" data-points="1" required /> <span>Easygoing</span></label></li>
+        <li><label><input type="radio" name="question4" value="C" data-points="3" required /> <span>Smart</span></label></li>
+        <li><label><input type="radio" name="question4" value="D" data-points="2" required /> <span>Friendly to talk to</span></label></li>
+    </ul>
+</li>
+
+<li> 
+    <h3><strong>Question 6</strong></h3>
+    <p><strong>You start a new world in a game, what would you do first?</strong></p>
+    <ul class="choices"> 
+        <li><label><input type="radio" name="question5" value="A" data-points="2" required /> <span>Build a House</span></label></li>
+        <li><label><input type="radio" name="question5" value="B" data-points="3" required /> <span>Find supplies</span></label></li>
+        <li><label><input type="radio" name="question5" value="C" data-points="4" required /> <span>Try to explore</span></label></li>
+        <li><label><input type="radio" name="question5" value="D" data-points="1" required /> <span>Invite a friend to join, since you prefer playing with others</span></label></li>
+    </ul>
+</li>
+
+<li> 
+    <h3><strong>Question 7</strong></h3>
+    <p><strong>If you were able to visit a timeline of your choice, where would you go?</strong></p>
+    <ul class="choices"> 
+        <li><label><input type="radio" name="question6" value="A" data-points="4" required /> <span>The Future</span></label></li>
+        <li><label><input type="radio" name="question6" value="B" data-points="2" required /> <span>The Jurassic Period (The Past)</span></label></li>
+        <li><label><input type="radio" name="question6" value="C" data-points="1" required /> <span>Stay in the present</span></label></li>
+        <li><label><input type="radio" name="question6" value="D" data-points="3" required /> <span>75 years ago (Industrial Era)</span></label></li>
+    </ul>
+</li>
+
+<li> 
+    <h3><strong>Question 8</strong></h3>
+    <p><strong>If there were 3 doors in front of you and only 1 door had 1 million dollars behind it, which door would you open?</strong></p>
+    <ul class="choices"> 
+        <li><label><input type="radio" name="question7" value="A" data-points="4" required /> <span>The first door that says “There is 1 million dollars in this door”</span></label></li>
+        <li><label><input type="radio" name="question7" value="B" data-points="2" required /> <span>The second door that says “Pick the door to the left”</span></label></li>
+        <li><label><input type="radio" name="question7" value="C" data-points="1" required /> <span>The third door says “There is definitely no money in this door”</span></label></li>
+        <li><label><input type="radio" name="question7" value="D" data-points="3" required /> <span>Pick a random door</span></label></li>
+    </ul>
+</li>
+
+<li> 
+    <h3><strong>Question 9</strong></h3>
+    <p><strong>You are given the ability to turn a concept into a reality, what would you pick?</strong></p>
+    <ul class="choices"> 
+        <li><label><input type="radio" name="question8" value="A" data-points="4" required /> <span>Control over Time</span></label></li>
+        <li><label><input type="radio" name="question8" value="B" data-points="3" required /> <span>Turning Ideas into reality</span></label></li>
+        <li><label><input type="radio" name="question8" value="C" data-points="2" required /> <span>Energy</span></label></li>
+        <li><label><input type="radio" name="question8" value="D" data-points="1" required /> <span>Trust</span></label></li>
+    </ul>
+</li>
+
+<li> 
+    <h3><strong>Question 10</strong></h3>
+    <p><strong>If you could live in one season forever, which would it be?</strong></p>
+    <ul class="choices"> 
+        <li><label><input type="radio" name="question9" value="A" data-points="3" required /> <span>Spring</span></label></li>
+        <li><label><input type="radio" name="question9" value="B" data-points="2" required /> <span>Autumn</span></label></li>
+        <li><label><input type="radio" name="question9" value="C" data-points="4" required /> <span>Summer</span></label></li>
+        <li><label><input type="radio" name="question9" value="D" data-points="1" required /> <span>Winter</span></label></li>
+    </ul>
+</ul>
+<center>
+  <div class="progress-container">
+  <div class="progress-bar" style="width: 33%;"></div>
+
+</div>
+<p class="progress-text">Page 1 of 3</p>
+  <button type="submit"><b><i>Go to next set of questions →</i></b></button>
+</center>
+</form>
+
+<script>
+
+if (performance.navigation.type === 2) {
+    location.reload(); 
+}
+
+window.onload = function() {
+
+    if (!localStorage.getItem("quizStarted")) {
+        window.location.replace("index.html");
+        return; 
+    }
+
+
+    document.querySelectorAll("input[type=radio]").forEach(input => {
+        const saved = localStorage.getItem(input.name);
+        if (saved && input.value === saved) {
+            input.checked = true;
+        }
+    });
+}; 
+
+document.querySelectorAll('input[type="radio"]').forEach(input => {
+    input.addEventListener("change", function() {
+        localStorage.setItem(this.name, this.value);
+        localStorage.setItem(this.name + "_points", this.getAttribute("data-points"));
+    });
+});
+
+const creativeForm = document.querySelector("#creativeForm");
+if (creativeForm) {
+    creativeForm.addEventListener("submit", function(e) {
+        e.preventDefault();
+        window.location.href = "PersonalityAndHobbiesPage.html";
+    });
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
