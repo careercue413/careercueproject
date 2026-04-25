@@ -224,6 +224,12 @@
 
 <script>
 window.onload = function() {
+    if (localStorage.getItem("quizCompleted") === "true") {
+        localStorage.clear();
+        window.location.replace("index.html");
+        return;
+    }
+
     if (!localStorage.getItem("quizStarted")) {
         window.location.replace("index.html");
         return;
