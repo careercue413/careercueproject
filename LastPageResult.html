@@ -190,36 +190,41 @@ const jobDescriptions = {
 
 window.onload = function() {
     localStorage.setItem("quizCompleted", "true");
-	history.pushState(null, null, location.href);
-	window.onpopstate = function () {
-	  history.go(1);
-	};
+    
+    // Trap the back button so they stay on this result page
+    history.pushState(null, null, location.href);
+    window.onpopstate = function () {
+      history.pushState(null, null, location.href);
+    };
 
     document.querySelectorAll("input[type=radio]").forEach(input => {
         input.checked = false;
     });
+
     let results = JSON.parse(localStorage.getItem("jobResults"))
-	           || JSON.parse(localStorage.getItem("balancedResults")) 
-			   || JSON.parse(localStorage.getItem("leadershipResults"));
+               || JSON.parse(localStorage.getItem("balancedResults")) 
+               || JSON.parse(localStorage.getItem("leadershipResults"));
 
     if (!results) {
-    localStorage.clear();
-    location.replace("index.html"); 
-    return;
+        localStorage.clear();
+        window.location.replace("index.html"); 
+        return;
     }
 
     document.querySelectorAll("details").forEach((detail, index) => {
         if(index < 6 && results[index]) {
             let job = results[index][0];
             let points = results[index][1];
-            detail.querySelector("p").innerText = job + " (" + points + " points) — " + jobDescriptions[job];
+            // Ensure the job exists in our description list before trying to display it
+            let description = jobDescriptions[job] || "Explore this career path to learn more about its unique opportunities.";
+            detail.querySelector("p").innerText = `${job} (${points} points) — ${description}`;
         }
     });
 };
-	
 
 function resetResults() {
     localStorage.clear();
+    // replace() is better than href because it "deletes" this result page from history
     window.location.replace("index.html");
 }
 </script>
